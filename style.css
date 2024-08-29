@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    position: relative;
+}
+
+ Logo
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: red;
+}
+
+
+.toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 20px;
+        right: -100%;
+        width: 200px;
+        background-color: #000;
+        transition: right 0.4s ease-in-out;
+        height: calc(100vh - 60px);
+        padding-top: 20px;
+    }
+    
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .toggle:checked ~ .nav-links {
+        right: 0;
+    }
+} */
