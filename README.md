@@ -1,5 +1,7 @@
 *Responsive Navigation Bar*
+
 Overview
+
 This project showcases a responsive navigation bar built using HTML and CSS. The navigation bar adapts seamlessly to different screen sizes, providing an optimal user experience on both mobile and desktop devices.
 
 Features
